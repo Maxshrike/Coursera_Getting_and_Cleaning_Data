@@ -19,7 +19,7 @@ The UCI HAR Dataset must be extracted from the zip file
 
 The UCI HAR Dataset must be in a directory called "UCI HAR Dataset"
 
-Per the assignment, the final output of the script is a "tidy" data set (called tidyset.txt) that will be written to the working directory.  This tidy data set will have the means of all the columns per activity and test subject which can also be found in this repository.
+Per the assignment, the final output of the script is a "tidy" data set (called tidyset.txt) that will be written to the working directory.  This tidy data set will have the means of all the columns per activity and test subject. An example of this output file can also be found in this repository.
 
 Code Book:
 
