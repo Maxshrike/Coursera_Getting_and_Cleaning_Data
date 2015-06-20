@@ -2,6 +2,7 @@
 Programming assignment for the Coursera "Getting and Cleaning Data" Course
 
 Introduction:
+
 This repository is the course project for the Getting and Cleaning Data course.  The repository contains this readme.md, a codebook.md (markdown document)the script written for the project and a sample output text file for the simplifed ("tidied") data set.
 
 Data Source:
@@ -15,6 +16,7 @@ To acheive the project objective, a script was written called  run_analysis.R wh
 Requirements to run the script:
 
 The UCI HAR Dataset must be extracted from the zip file
+
 The UCI HAR Dataset must be in a directory called "UCI HAR Dataset"
 
 Per the assignment, the final output of the script is a "tidy" data set (called tidyset.txt) that will be written to the working directory.  This tidy data set will have the means of all the columns per activity and test subject which can also be found in this repository.
