@@ -46,6 +46,8 @@ and frequency domain.
 * test/y_test.txt: Test activity Id Labels
 * test/subject_train.txt: Each row identifies the subject who performed the activity. The range is from 1 to 30.
 
+Note: All measurements are floating point numbers in the range (-1, 1).
+
 ##Script Function Description
 The run_analysis.R script has the following requirements to perform transformation on UCI HAR Dataset.
 
@@ -63,9 +65,9 @@ the result of which is also a 10299x1 data frame with activity IDs.
 
 Reads features.txt and extracts only the measurements on the mean and standard deviation for each measurement. The result is a 10299x68 data frame, 
 because only 66 out of 561 attributes are measurements on the mean and standard deviation. (the 2 extra columns are the subjects and activity columns) 
-All measurements appear to be floating point numbers in the range (-1, 1).
 
-Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set (originally coded as 1-6, recoded as:
+
+Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set (originally coded as 1-6) recoded as:
 
 * walking
 * walkingupstairs
@@ -86,7 +88,7 @@ The script also appropriately labels the data set with descriptive names: all fe
 * tGravityAccMeanZ
 * tGravityAccStdX
 
-In the last step the script creates a 2nd and independent tidy data set with the average of each measurement for each activity and each subject. The result is saved as Tidyset.txt, a 180x68 data frame, where the first column contains activity names, the second column contains subject identitifying number, and then the averages for each of the 66 attributes are in columns 3...68. There are 6 activities and 30 subjects, thus 180 rows in this data set with averages for each variable. 
+In the last step the script creates a 2nd and independent tidy data set with the average of each measurement for each activity and each subject. The result is saved as Tidyset.txt, a 180x68 data frame, where the first column contains activity names, the second column contains subject identitifying number, and then the averages for each of the 66 attributes are in columns 3...68. The measurement averages are floating point numbers in the range of (-1,1). There are 6 activities and 30 subjects, thus 180 rows in this data set with averages for each variable. 
 
 The resulting Tidyset.txt is included in this repository for reference.
  
