@@ -86,9 +86,9 @@ The script also appropriately labels the data set with descriptive names: all fe
 * tGravityAccMeanZ
 * tGravityAccStdX
 
-In the last step the script creates a 2nd and independent tidy data set with the average of each measurement for each activity and each subject. The result is saved as tidyset.txt, a 180x68 data frame, where the first column contains activity names, the second column contains subject identitifying number, and then the averages for each of the 66 attributes are in columns 3...68. There are 6 activities and 30 subjects, thus 180 rows in this data set with averages for each variable. 
+In the last step the script creates a 2nd and independent tidy data set with the average of each measurement for each activity and each subject. The result is saved as Tidyset.txt, a 180x68 data frame, where the first column contains activity names, the second column contains subject identitifying number, and then the averages for each of the 66 attributes are in columns 3...68. There are 6 activities and 30 subjects, thus 180 rows in this data set with averages for each variable. 
 
-The resulting tidyset.txt is included in this repository for reference.
+The resulting Tidyset.txt is included in this repository for reference.
  
  
  
