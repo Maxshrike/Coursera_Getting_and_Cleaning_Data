@@ -19,7 +19,7 @@ To acheive the project objective, a script was written called  run_analysis.R wh
 * The UCI HAR Dataset must be in a directory called "UCI HAR Dataset"
 * Script will be located in and run from the same working directory as the "UCI HAR Dataset" directory
 
-Per the assignment, the final output of the script is a "tidy" data set (called tidyset.txt) that will be written to the working directory.  This tidy data set will have the means of all the columns per activity and test subject. An example of this output file can also be found in this repository.
+Per the assignment, the final output of the script is a "tidy" data set (called Tidyset.txt) that will be written to the working directory.  This tidy data set will have the means of all the columns per activity and test subject. An example of this output file can also be found in this repository.
 
 ##Code Book:
 
