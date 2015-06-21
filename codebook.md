@@ -46,18 +46,6 @@ and frequency domain.
 * test/y_test.txt: Test activity Id Labels
 * test/subject_train.txt: Each row identifies the subject who performed the activity. The range is from 1 to 30.
 
-##Details about Files to be used in analysis from Source Data
-
-Shared files: features.txt: 561 rows of 2 variables (feature identity and feature Name) 
-* activity_labels.txt: 6 rows of 2 variables (activity identity and activity name)
-
-Test Dataset: x_test.txt: data has 2947 rows of 561 measurement variables. The measurement variables are listed in features.txt 
-* y_test.txt: 2947 rows of 1 variables. This is the activity identity - subject_test.txt: 2497 rows of 1 variable (subject identity)
-
-Training Dataset - x_train.txt: data has 7352 rows of 561 measurement variables. The measurement variables are listed in features.txt 
-* y_train.txt: 7352 rows of 1 variables. This is the activity identity - subject_train.txt: 7352 rows of 1 variable (subject identity)
-
-
 ##Script Function Description
 The run_analysis.R script has the following requirements to perform transformation on UCI HAR Dataset.
 
@@ -77,7 +65,7 @@ Reads features.txt and extracts only the measurements on the mean and standard d
 because only 66 out of 561 attributes are measurements on the mean and standard deviation. (the 2 extra columns are the subjects and activity columns) 
 All measurements appear to be floating point numbers in the range (-1, 1).
 
-Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set (originally coded as 1-6, recoded as):
+Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set (originally coded as 1-6, recoded as:
 
 * walking
 
@@ -91,19 +79,26 @@ Reads activity_labels.txt and applies descriptive activity names to name the act
 
 * laying
 
-The script also appropriately labels the data set with descriptive names: all feature names (attributes) and activity names have
- underscores and brackets () are removed. "mean" and "std" ID's are renamed to "Mean" and "Std"  The result is saved as Extracted_Data.txt, a 10299x68 data frame such that the first column contains subject IDs, the second column 
+The script also appropriately labels the data set with descriptive names: all feature names (attributes) and activity names have underscores and brackets () are removed. "mean" and "std" ID's are renamed to "Mean" and "Std"  The result is saved as Extracted_Data.txt, a 10299x68 data frame such that the first column contains subject IDs, the second column 
  activity names, and the last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. The names of the attributes are like
  the following examples:
 
 tBodyAccMeanY            
+
 tBodyAccMeanZ
+
 tBodyAccStdX
+
 tBodyAccStdY
+
 tBodyAccStdZ
+
 tGravityAccMeanX
+
 tGravityAccMeanY
+
 tGravityAccMeanZ
+
 tGravityAccStdX
  
 In the last step the script creates a 2nd and independent tidy data set with the average of each measurement for each activity and each subject. 
