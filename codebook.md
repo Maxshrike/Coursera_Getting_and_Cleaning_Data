@@ -81,15 +81,15 @@ Reads activity_labels.txt and applies descriptive activity names to name the act
 
 The script also appropriately labels the data set with descriptive names: all feature names (attributes) and activity names have underscores and brackets () are removed. "mean" and "std" ID's are renamed to "Mean" and "Std"  The result is saved as Extracted_Data.txt, a 10299x68 data frame such that the first column contains subject IDs, the second column activity names, and the last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. The names of the attributes are like the following 9 (of 66) examples:
 
-tBodyAccMeanY
-tBodyAccMeanZ
-tBodyAccStdX
-tBodyAccStdY
-tBodyAccStdZ
-tGravityAccMeanX
-tGravityAccMeanY
-tGravityAccMeanZ
-tGravityAccStdX
+* tBodyAccMeanY
+* tBodyAccMeanZ
+* tBodyAccStdX
+* tBodyAccStdY
+* tBodyAccStdZ
+* tGravityAccMeanX
+* tGravityAccMeanY
+* tGravityAccMeanZ
+* tGravityAccStdX
 
 In the last step the script creates a 2nd and independent tidy data set with the average of each measurement for each activity and each subject. 
 The result is saved as tidyset.txt, a 180x68 data frame, where the first column contains subject IDs, 
